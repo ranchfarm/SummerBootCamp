@@ -10,22 +10,180 @@
   --background5: #c7dbff;
 } 
 
-img{
-  object-fit: contain;
-  width:400px;
+* {
+  font-family: Warnes;
+
+
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
 }
 
-.my-first-list {
-   list-style-position: inside;
-color:red;
-}
-
-* h1 {  
+h1 {  
   font-family: Warnes;
   margin: 0;
   font-size: 30px;
   color:var(--contrast2)
 }
+
+p {
+  font-weight: 300;
+}
+
 main {
-  background-color:var(--background2) ;
+ 
+  height: 1800px;
+  background-color:var(--background2);
+}
+header {
+  position: fixed;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background1);
+  font-weight: 300;
+  padding: 15px;
+  justify-content: center;
+}
+
+header h1 {
+  padding-right: 40px;
+  border-right: 1px solid --background1;
+}
+
+header ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+header li a {
+  text-decoration: none;
+  color: var(--contrast2);
+  font-size: 1.2rem;
+}
+
+header li {
+  align-self: center;
+  text-decoration: none;
+}
+
+header li :hover {
+  text-decoration: underline;
+  color: var(--background2);
+}
+
+.content {
+  padding: 74px 50px;
+  background-color: var(--background2);
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 28%;
+  background-color: var(--background5);
+  color:var(--contrast1);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  padding: 15px;
+  min-width: 280px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+}
+
+.my-first-list {
+
+
+  list-style-position: inside;
+
+  border-radius: 10px;
+}
+
+button {
+  width: 50%;
+  background-color: var(--background1);
+  color: var(--background2);
+  padding: 12px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color:var(--background1);
+  color:var(--contrast2);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color:var(--contrast2);
+}
+
+footer div {
+  margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header * {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  header h1 {
+    border: none;
+    padding: 0;
+  }
+
+  header ul {
+    margin: 0 auto;
+  }
+
+  .content {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+
+  #homepage_fruit {
+    margin-top: 100px;
+  }
+
+  .info {
+    margin-top: 100px;
+  }
+
+  .business_information {
+    grid-row: 3;
+  }
 }
