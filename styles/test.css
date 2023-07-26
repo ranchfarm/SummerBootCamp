@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Hanalei&family=Monoton&family=Warnes&display=swap');
+
+:root {
+  --contrast1: #001524;
+  --background1: #15616d;
+  --background2: #ffecd1;
+  --background3: #ff7d00;
+  --background4: #78390f;
+  --contrast2: white;
+  --background5: #c7dbff;
+} 
+
 img{
   object-fit: contain;
   width:400px;
@@ -8,12 +20,12 @@ img{
 color:red;
 }
 
-:root {
-  --blue:#335c67
-  --cream:#fff3b0
-  --light:#e09f3e
-  --
-
-
-  
+* h1 {  
+  font-family: Warnes;
+  margin: 0;
+  font-size: 30px;
+  color:var(--contrast2)
+}
+main {
+  background-color:var(--background2) ;
 }
