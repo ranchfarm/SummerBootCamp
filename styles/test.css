@@ -2,3 +2,18 @@ img{
   object-fit: contain;
   width:400px;
 }
+
+.my-first-list {
+   list-style-position: inside;
+color:red;
+}
+
+:root {
+  --blue:#335c67
+  --cream:#fff3b0
+  --light:#e09f3e
+  --
+
+
+  
+}

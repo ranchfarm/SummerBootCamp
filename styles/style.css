@@ -1,12 +1,26 @@
-* {
-    font-family: sans-serif;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Hanalei&family=Monoton&family=Warnes&display=swap');
+
+
+*
+
+
+
+{
+    font-family: Warnes;
+
+
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
 }
 
 h1 {
+  font-family: darkblue;
     margin: 0;
+  font-size: 30px;
 }
 
 p {
@@ -64,7 +78,7 @@ header li :hover {
 
 .card {
     width: 28%;
-    background-color: white;
+    background-color: #83fbd7;
     color: #1e2d2fe8;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -76,6 +90,12 @@ header li :hover {
 .card h2 {
     font-size: 1.5em;
 }
+.my-first-list {
+
+ 
+   list-style-position: inside;
+ 
+border-radius:10px;}
 
 button {
     width: 50%;
