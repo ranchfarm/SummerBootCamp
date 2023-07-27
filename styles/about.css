@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Hanalei&family=Monoton&family=Warnes&display=swap');
+
+:root {
+  --contrast1: #001524;
+  --background1: #15616d;
+  --background2: #ffecd1;
+  --background3: #ff7d00;
+  --background4: #78390f;
+  --contrast2: white;
+  --background5: #c7dbff;
+} 
+
 main {
-    background-color: whitesmoke;
+    background-color: var(--background2);
 }
 
 
