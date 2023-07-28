@@ -8,7 +8,8 @@
   --background4: #78390f;
   --contrast2: white;
   --background5: #c7dbff;
-} 
+  --space-background: #000000;
+}
 
 * {
   font-family: Warnes;
@@ -19,31 +20,41 @@
   font-size: 1.1rem;
 }
 
-h1 {  
+br {
+   background-color:var(--space-background);
+}
+
+h1 {
   font-family: Warnes;
   margin: 0;
   font-size: 30px;
-  color:var(--contrast2)
+  color: var(--contrast2)
 }
+
 
 p {
   font-weight: 300;
 }
 
-main {
 
-  background-color:var(--background2);
+
+main {
+  max-height: 100px;
+  background-color: var(--space-background);
+  position: ;
 }
+
 header {
   position: fixed;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: var(--background1);
+  background-color: var(--space-background);
   font-weight: 300;
   padding: 15px;
   justify-content: center;
+  z-index: 999;
 }
 
 header h1 {
@@ -76,15 +87,17 @@ header li :hover {
 
 .content {
   padding: 74px 50px;
-  background-color: var(--background2);
+  background-color: var(--space-background);
   display: flex;
   gap: 35px;
   flex-wrap: wrap;
   justify-content: center;
-  height:500;
+  height: 50;
 }
 
-.vid{width:100%;}
+.vid {
+  width: 100%;
+}
 
 
 
@@ -99,17 +112,18 @@ button {
 }
 
 footer {
-  background-color:var(--background1);
-  color:var(--contrast2);
- margin-bottom: 0px;
+  background-color: var(--background1);
+  color: var(--contrast2);
+  margin-bottom: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   padding: 15px;
+  object-position: bottom;
 }
 
 footer a {
-  color:var(--contrast2);
+  color: var(--contrast2);
 }
 
 footer div {
@@ -150,12 +164,10 @@ footer div {
     flex-direction: column;
     margin: 0 auto;
     padding: 20px 0;
-    height:500px;
+    height: 500px;
+    background-color:var(--space-background)
   }
 
-  .main{
-   margin-top: 70px; 
-  }
 
   .card {
     margin: 0 auto;
